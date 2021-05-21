@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    build:
+      context: ./
+    command: ttyd bash -c 'ruby start.rb; exit'
+    volumes:
+      - .:/app
+    ports:
+      - 0.0.0.0:7681:7681
+  data-editor:
+    build:
+      context: ./
+    command: ttyd bash -c 'mcedit data/usersData.json; exit'
+    environment:
+      - TERM=xterm
+    volumes:
+      - .:/app
+    ports:
+      - 0.0.0.0:7682:7681
