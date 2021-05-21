@@ -18,7 +18,3 @@ This is the code part of a Automatic Teller Machine term project at DSC. Written
 ```
 node app.js
 ```
-
-### Testing as a customer
-
-Follow the on-screen prompts to test. There is one customer hard-coded in. Default data for the customers can be found in the mydata.json file. If you want to change the customer being used for testing, uncomment lines 90 and 96, and then comment lines 91 and 97 in the menu.rb file. Save and start the app and use one of the following 3 default customers:
