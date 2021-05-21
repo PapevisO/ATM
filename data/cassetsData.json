@@ -1,0 +1,198 @@
+[
+  {
+    "cassetId": 1,
+    "minDiameter": 0,
+    "maxDiameter": 20,
+    "coins": [
+      {
+        "userId": 1,
+        "accountNum": 10001,
+        "accountType": "Checking",
+        "transactions": [
+          {
+            "userId": 1,
+            "accountNum": 10001,
+            "date": "2016-04-11",
+            "transactionType": "Deposit",
+            "amount": 900,
+            "comment": ""
+          }
+        ],
+        "creditLimit": 0
+      },
+      {
+        "userId": 1,
+        "accountNum": 20001,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      },
+      {
+        "userId": 1,
+        "accountNum": 30001,
+        "accountType": "Loan",
+        "transactions": [],
+        "creditLimit": 15000
+      },
+      {
+        "userId": 1,
+        "accountNum": 40001,
+        "accountType": "Mortgage",
+        "transactions": [],
+        "creditLimit": 430000
+      },
+      {
+        "userId": 1,
+        "accountNum": 50001,
+        "accountType": "Car Loan",
+        "transactions": [],
+        "creditLimit": 50000
+      },
+      {
+        "userId": 1,
+        "accountNum": 60001,
+        "accountType": "Boat Loan",
+        "transactions": [],
+        "creditLimit": 30000
+      },
+      {
+        "userId": 1,
+        "accountNum": 70001,
+        "accountType": "Credit Card",
+        "transactions": [],
+        "creditLimit": 20000
+      }
+    ]
+  },
+  {
+    "userId": 2,
+    "atmCardId": "0df20751-e24f-481b-9b75-8c26efee3198",
+    "atmPin": "5690",
+    "firstName": "Frank",
+    "lastName": "Smith",
+    "accounts": [
+      {
+        "userId": 2,
+        "accountNum": 20002,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      },
+      {
+        "userId": 2,
+        "accountNum": 21002,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      },
+      {
+        "userId": 2,
+        "accountNum": 22002,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      }
+    ]
+  },
+  {
+    "userId": 3,
+    "atmCardId": "80e711df-8c8d-4d1b-871e-7e1528675d11",
+    "atmPin": "1174",
+    "firstName": "Jane",
+    "lastName": "English",
+    "accounts": [
+      {
+        "userId": 3,
+        "accountNum": 10003,
+        "accountType": "Checking",
+        "transactions": [
+          {
+            "userId": 3,
+            "accountNum": 10003,
+            "date": "2016-04-11",
+            "transactionType": "Deposit",
+            "amount": 1500,
+            "comment": ""
+          },
+          {
+            "userId": 3,
+            "accountNum": 10003,
+            "date": "2016-04-11",
+            "transactionType": "Deposit",
+            "amount": 1250,
+            "comment": ""
+          },
+          {
+            "userId": 3,
+            "accountNum": 10003,
+            "date": "2021-05-21",
+            "transactionType": "Withdrawal Cash",
+            "amount": -70.0,
+            "comment": ""
+          }
+        ],
+        "creditLimit": 0
+      },
+      {
+        "userId": 3,
+        "accountNum": 20003,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      },
+      {
+        "userId": 3,
+        "accountNum": 21003,
+        "accountType": "Savings",
+        "transactions": [],
+        "creditLimit": 0
+      },
+      {
+        "userId": 3,
+        "accountNum": 40003,
+        "accountType": "Mortgage",
+        "transactions": [
+          {
+            "userId": 3,
+            "accountNum": 40003,
+            "date": "2016-04-11",
+            "transactionType": "Charge",
+            "amount": 75000,
+            "comment": "oldHouse"
+          }
+        ],
+        "creditLimit": 80000
+      },
+      {
+        "userId": 3,
+        "accountNum": 50003,
+        "accountType": "Car Loan",
+        "transactions": [
+          {
+            "userId": 3,
+            "accountNum": 50003,
+            "date": "2016-04-11",
+            "transactionType": "Charge",
+            "amount": 12000,
+            "comment": "newCar"
+          }
+        ],
+        "creditLimit": 10000
+      },
+      {
+        "userId": 3,
+        "accountNum": 51003,
+        "accountType": "Car Loan",
+        "transactions": [],
+        "creditLimit": 15000
+      },
+      {
+        "userId": 3,
+        "accountNum": 70003,
+        "accountType": "Credit Card",
+        "transactions": [],
+        "creditLimit": 1000
+      }
+    ]
+  }
+]
