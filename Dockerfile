@@ -1,9 +1,5 @@
-FROM ruby:2.6-stretch
+FROM node:14-stretch
 LABEL maintainer "Oleksandr Papevis <sasha@papevis.com>"
-
-# Acknowledgment to Tim Brust <github@timbrust.de>
-ARG REFRESHED_AT
-ENV REFRESHED_AT $REFRESHED_AT
 
 RUN apt-get update
 # RUN apt-get -y upgrade

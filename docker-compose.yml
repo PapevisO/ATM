@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: ./
-    command: ttyd bash -c 'ruby start.rb; exit'
+    command: ttyd bash -c 'node app.js; exit'
     volumes:
       - .:/app
     ports:
@@ -18,3 +18,13 @@ services:
       - .:/app
     ports:
       - 0.0.0.0:7682:7681
+  shell:
+    build:
+      context: ./
+    command: ttyd bash
+    environment:
+      - TERM=xterm
+    volumes:
+      - .:/app
+    ports:
+      - 0.0.0.0:7683:7681
