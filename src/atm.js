@@ -1,6 +1,6 @@
 var Account, prompt, promptSchemas, colors, ATM;
 Account = require('./account.js');
-Cassets = require('./cassets.js');
+Cassettes = require('./cassettes.js');
 promptSchemas = require('./prompt_schemas.js');
 prompt = require('prompt');
 colors = require('colors');
@@ -274,14 +274,15 @@ ATM = (function () {
           balance = this.checkBalance();
         if (balance >= amount) {
           newBalance = balance - amount;
-          cassets = new Cassets;
-          withdrawCombo = cassets.prepareWithdrawalCombo(amount);
-          if (!withdrawCombo) {
-            cassets.presentWithdrawCombo;
+          cassettes = new Cassettes;
+          if (!!cassettes.prepareWithdrawCombo(amount)) {
+            console.log(cassettes.presentWithdrawCombo());
+            cassettes.deductComboFromCassettes();
             balance = session.editBalance(sessionPin, bankID, newBalance);
+            return balance;
           } else {
             return (
-              "This ATM cannot process the amount you entered: " + amount +
+              "This ATM is temporarily unable to process the amount you entered: " + amount +
               "\nYour balance remains: " + balance
             );
           }

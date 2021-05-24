@@ -11,7 +11,7 @@ services:
   data-editor:
     build:
       context: ./
-    command: ttyd bash -c 'mcedit data/usersData.json; exit'
+    command: ttyd bash -c 'mcedit data/cassettes.json; exit'
     environment:
       - TERM=xterm
     volumes:
