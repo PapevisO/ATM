@@ -6,8 +6,16 @@ services:
     command: ttyd bash -c 'node app.js; exit'
     volumes:
       - .:/app
-    ports:
-      - 0.0.0.0:7681:7681
+    #ports:
+    #  - 0.0.0.0:7681:7681
+    environment:
+      - VIRTUAL_HOST=atm-app.papievis.com
+      - VIRTUAL_PORT=7681
+      - VIRTUAL_PROTO=http
+      - SSL_POLICY=Mozilla-Modern
+      - LETSENCRYPT_HOST=atm-app.papievis.com
+      - LETSENCRYPT_EMAIL=postmaster@papievis.com
+
   data-editor:
     build:
       context: ./
@@ -16,8 +24,15 @@ services:
       - TERM=xterm
     volumes:
       - .:/app
-    ports:
-      - 0.0.0.0:7682:7681
+    #ports:
+    #  - 0.0.0.0:7682:7681
+    environment:
+      - VIRTUAL_HOST=atm-stash.papievis.com
+      - VIRTUAL_PORT=7681
+      - VIRTUAL_PROTO=http
+      - SSL_POLICY=Mozilla-Modern
+      - LETSENCRYPT_HOST=atm-stash.papievis.com
+      - LETSENCRYPT_EMAIL=postmaster@papievis.com
   shell:
     build:
       context: ./
@@ -26,5 +41,17 @@ services:
       - TERM=xterm
     volumes:
       - .:/app
-    ports:
-      - 0.0.0.0:7683:7681
+    #ports:
+    #  - 0.0.0.0:7683:7681
+    environment:
+      - VIRTUAL_HOST=atm-console.papievis.com
+      - VIRTUAL_PORT=7681
+      - VIRTUAL_PROTO=http
+      - SSL_POLICY=Mozilla-Modern
+      - LETSENCRYPT_HOST=atm-console.papievis.com
+      - LETSENCRYPT_EMAIL=postmaster@papievis.com
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
